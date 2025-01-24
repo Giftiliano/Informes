@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="350.0" prefWidth="450.0" style="-fx-background-color: #f0f4ff;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.informes.HistorialController">
+    <children>
+        <!-- Título -->
+        <Label layoutX="149.0" layoutY="31.0" text="Historial Médico" textFill="#0d47a1">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+
+        <!-- Entrada de parámetros -->
+        <Label layoutX="30.0" layoutY="100.0" text="Introduce los parámetros necesarios:" textFill="#0d47a1" />
+        <Label layoutX="30.0" layoutY="140.0" text="ID del Paciente:" textFill="#0d47a1" />
+        <TextField fx:id="pacienteIdField" layoutX="150.0" layoutY="135.0" prefWidth="250.0" />
+
+        <!-- Botón para generar el informe -->
+        <Button layoutX="65.0" layoutY="200.0" onAction="#goBack" prefHeight="40.0" prefWidth="120.0" style="-fx-background-color: #0d47a1; -fx-text-fill: white;" text="Volver" />
+
+        <!-- Botón para volver -->
+        <Button layoutX="258.0" layoutY="200.0" onAction="#generateReport" prefHeight="40.0" prefWidth="120.0" style="-fx-background-color: #0d47a1; -fx-text-fill: white;" text="Generar" />
+
+        <Rectangle fill="#0d47a1" height="20.0" layoutX="0.0" layoutY="330.0" width="450.0" />
+        <Label layoutX="140.0" layoutY="332.0" style="-fx-font-size: 11;" text="© 2025 Giftiliano Healthcare" textFill="#ffffff" />
+    </children>
+</AnchorPane>

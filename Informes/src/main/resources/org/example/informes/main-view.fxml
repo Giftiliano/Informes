@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="350.0" prefWidth="450.0" style="-fx-background-color: #f0f4ff;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.informes.MainController">
+    <children>
+        <!-- Cabecera -->
+        <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#0d47a1" height="80.0" layoutX="0.0" layoutY="0.0" width="450.0" />
+        <Label layoutX="120.0" layoutY="14.0" text="GIFTILIANO HEALTHCARE" textFill="#ffffff">
+            <font>
+                <Font name="Arial Black" size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="151.0" layoutY="40.0" text="Tu salud, nuestra prioridad" textFill="#bbdefb">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+
+        <!-- Contenido principal -->
+        <Label layoutX="89.0" layoutY="143.0" text="Seleccione el informe que desea generar:" textFill="#0d47a1">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+
+        <!-- Botones para generar informes -->
+        <Button fx:id="generateReport1Button" layoutX="50.0" layoutY="200.0" onAction="#goToCitas" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: #0d47a1; -fx-text-fill: #ffffff; -fx-font-size: 14; -fx-cursor: hand;" text="Citas" />
+        <Button fx:id="generateReport2Button" layoutX="250.0" layoutY="200.0" onAction="#goToHistorial" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: #0d47a1; -fx-text-fill: #ffffff; -fx-font-size: 14; -fx-cursor: hand;" text="Historial Médico" />
+
+        <!-- Pie de página -->
+        <Rectangle fill="#0d47a1" height="20.0" layoutX="0.0" layoutY="330.0" width="450.0" />
+        <Label layoutX="140.0" layoutY="332.0" style="-fx-font-size: 11;" text="© 2025 Giftiliano Healthcare" textFill="#ffffff" />
+    </children>
+</AnchorPane>
